@@ -1,0 +1,4 @@
+name: m4Mundos
+version: '1.0-SNAPSHOT'
+main: me.m4nst3in.m4Mundos.M4Mundos
+api-version: '1.21'
