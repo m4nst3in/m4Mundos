@@ -1,4 +1,19 @@
-name: m4Mundos
-version: '1.0-SNAPSHOT'
+name: M4Mundos
+version: '1.0.0'
 main: me.m4nst3in.m4Mundos.M4Mundos
 api-version: '1.21'
+depend: [Multiverse-Core]
+authors: [m4nst3in]
+description: Sistema avançado de gerenciamento de mundos para Minecraft
+commands:
+  mundos:
+    description: Abre o menu de mundos disponíveis
+    usage: /mundos
+    aliases: [mundo, world, worlds]
+permissions:
+  m4mundos.use:
+    description: Permite usar o comando /mundos
+    default: true
+  m4mundos.admin:
+    description: Permite acesso a recursos administrativos
+    default: op

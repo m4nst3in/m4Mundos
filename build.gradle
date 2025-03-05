@@ -8,17 +8,19 @@ version = '1.0-SNAPSHOT'
 repositories {
     mavenCentral()
     maven {
-        name = "papermc-repo"
-        url = "https://repo.papermc.io/repository/maven-public/"
+        name = "papermc"
+        url = uri("https://repo.papermc.io/repository/maven-public/")
     }
-    maven {
-        name = "sonatype"
-        url = "https://oss.sonatype.org/content/groups/public/"
-    }
+    // Sonatype
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+    // Multiverse-Core
+    maven { url = "https://repo.onarandombox.com/content/groups/public/" }
 }
 
 dependencies {
     compileOnly("io.papermc.paper:paper-api:1.21.4-R0.1-SNAPSHOT")
+    compileOnly("com.onarandombox.multiversecore:multiverse-core:4.3.14")
+    compileOnly 'org.jetbrains:annotations:24.0.0'
 }
 
 def targetJavaVersion = 21
